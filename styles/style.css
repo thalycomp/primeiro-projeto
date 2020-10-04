@@ -18,7 +18,7 @@ a {
     text-decoration: none;
 }
 
-header {    
+header {
     padding-top: 2%;
     padding-bottom: 2%;
 }
@@ -60,27 +60,31 @@ header nav ul button {
 
     header nav ul button:hover {
         background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 128.3%);
-    }  
-    
+    }
+
 #banner {
     justify-content: center;
     display: flex;
     position: relative;
     width: 100%;
-    height: 500px;   
+    height: 700px;
     background: linear-gradient(174.48deg, #FD749B -12.41%, #281AC8 88.56%);
 }
 
     #banner svg {
         position: absolute;
-        left: 0;    
+        left: 0;
         bottom: 0;
         width: 100%;
     }
 
+    #banner svg path {
+        fill: #fff;
+    }
+
     #banner article {
         color: #fff;
-        width: 45%;
+        width: 55%;
     }
 
     #banner article h1 {
@@ -90,12 +94,145 @@ header nav ul button {
         font-size: 30px;
     }
 
+    #banner article h4 {
+        font-size: 18px;
+        font-family: poppins;
+        font-weight: 200;
+        padding-top: 10px;
+    }
+
+    #banner figure {
+        width: 40%;
+    }
+
     #banner #content-banner {
         max-width: 900px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: -20px;
+        margin-top: -145px;
     }
+
+.sobre {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+    .sobre h2 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 60px;
+        background: -webkit-linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #FD749B;
+    }
+
+    .sobre hr {
+        margin: 0 auto;
+        padding: 2px;
+        width: 50px;
+        background-color: #FD749B;
+        border:0px;
+        border-radius: 100px;
+    }
+
+.texto-container {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 80%;
+
+    text-align: left;
+}
+
+    .texto-container article h3 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        background: -webkit-linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #FD749B;
+    }
+
+    .texto-container hr {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        float: left;
+        display: block;
+        width: 50px;
+    }
+
+    .texto-container article p {
+        padding-top: 5px;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+        .texto-container article p::after,
+        .texto-container article p::before {
+            display: table;
+            content: '';
+            clear: both;
+        }
+
+.imagem-sobre {
+    width: 85%;
+}
+
+    .imagem-sobre img {
+        width: 100%;
+    }
+
+    .texto-inferior-container {
+        padding-top: 10px;
+    }
+
+        .texto-inferior-container p {
+            padding-top: 5px;
+            text-align: left;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            margin-bottom: 2%;
+        }
+
+.parceiros {
+    position: relative;
+    width: 100%;
+    /* height: 700px; */
+    padding-top: 70px;    
+}
+
+.parceiros-background {
+    height: 500px;   
+    background: linear-gradient(174.48deg, #FD749B -12.41%, #281AC8 88.56%);
+    z-index: 1;
+    position: relative;
+}
+
+.container-branco {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #fff;    
+    border-radius: 50px;
+    height: 500px;
+    box-shadow: 1px 1px 1px #000;
+    z-index: 2;
+    position: absolute;
+    bottom: -10%;
+    left: 11%;
+}
 
